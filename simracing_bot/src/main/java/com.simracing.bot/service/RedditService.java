@@ -1,6 +1,9 @@
 package main.java.com.simracing.bot.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import main.java.com.simracing.bot.dto.PostToPublishDTO;
+import main.java.com.simracing.bot.dto.RedditDTO.RedditChild;
+import main.java.com.simracing.bot.dto.RedditDTO.RedditResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import java.util.Optional;
