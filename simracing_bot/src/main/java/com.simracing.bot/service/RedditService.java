@@ -18,7 +18,7 @@ public class RedditService {
         return restTemplate.getForObject(subredditURL, String.class);
     }
 
-    public Optional<PostToPublishDTO> getTopHotPosts(int minUpvotes) {
+    public Optional<PostToPublishDTO> getHottestPosts(int minUpvotes) {
         String rawJson = fetchRawPostJSON();
 
         try {

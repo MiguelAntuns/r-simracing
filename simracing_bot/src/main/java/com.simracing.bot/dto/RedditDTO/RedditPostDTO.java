@@ -9,7 +9,7 @@ public class RedditPostDTO {
     private String url;
     private String permalink;
 
-    @JsonProperty("ups")
+    @JsonProperty("upvotes")
     private int upvotes;
 
     @JsonProperty("is_video")
