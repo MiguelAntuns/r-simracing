@@ -11,13 +11,14 @@ public class TwitterService {
         this.authService = authService;
     }
 
+    // TO-DO construir header OAuth 1.0a e enviar POST request para o endpoint
+    // (por agora só texto)
     private void postTweet(String text) {
-        // TO-DO construir header OAuth 1.0a e enviar POST request para o endpoint
-        // https://api.twitter.com/2/tweets
-        // (por agora só texto)
+
     }
 
+    // TO-DO: upload media (v1.1 endpoint) + criar tweet (v2 endpoint)
     public void postTweetWithMedia(String text, byte[] mediaBytes) {
-        // TO-DO: upload media (v1.1 endpoint) + criar tweet (v2 endpoint)
+
     }
 }

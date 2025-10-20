@@ -2,31 +2,31 @@ package main.java.com.simracing.bot.dto;
 
 public class PostToPublishDTO {
 
-    private String text;
+    private String title;
     private String mediaUrl;
     private boolean isVideo;
 
-    public void setText(String text) {
-        this.text = text;
+    public String getTitle() {
+        return title;
     }
 
-    public void setMediaUrl(String mediaUrl) {
-        this.mediaUrl = mediaUrl;
-    }
-
-    public void setVideo(boolean video) {
-        isVideo = video;
-    }
-
-    public String getText() {
-        return text;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getMediaUrl() {
         return mediaUrl;
     }
 
+    public void setMediaUrl(String mediaUrl) {
+        this.mediaUrl = mediaUrl;
+    }
+
     public boolean isVideo() {
         return isVideo;
+    }
+
+    public void setVideo(boolean video) {
+        isVideo = video;
     }
 }

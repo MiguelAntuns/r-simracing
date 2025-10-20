@@ -31,7 +31,7 @@ public class RedditService {
                     .filter(post -> post.getUrl().endsWith(".jpg") || post.getUrl().endsWith(".png") || post.getUrl().endsWith(".gif") || post.getUrl().contains("v.redd.it"))
                     .map(post -> {
                         PostToPublishDTO dto = new PostToPublishDTO();
-                        dto.setText(post.getTitle() + " " + post.getFullRedditURL());
+                        dto.setTitle(post.getTitle() + " " + post.getFullRedditURL());
                         dto.setMediaUrl(post.getUrl());
                         dto.setVideo(post.isVideo());
                         return dto;

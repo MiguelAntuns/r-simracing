@@ -2,7 +2,6 @@ package main.java.com.simracing.bot.dto.RedditDTO;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-
 public class RedditPostDTO {
 
     private String title;
