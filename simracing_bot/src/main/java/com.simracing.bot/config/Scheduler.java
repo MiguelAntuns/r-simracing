@@ -1,9 +1,20 @@
+package main.java.com.simracing.bot.config;
+
 import main.java.com.simracing.bot.dto.PostToPublishDTO;
 import main.java.com.simracing.bot.service.RedditService;
 import main.java.com.simracing.bot.service.TwitterService;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import java.util.Optional;
+
+/**
+ *
+ * - Executes 2 to 2 hours
+ * - Obtains the post
+ * - Extracts the title+link
+ * - Calls TwitterService to post
+ *
+ */
 
 @Component
 public class Scheduler {

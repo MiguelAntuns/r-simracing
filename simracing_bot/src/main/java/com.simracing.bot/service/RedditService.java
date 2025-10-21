@@ -8,6 +8,16 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import java.util.Optional;
 
+/**
+ *
+ * - Fetches JSON from Reddit
+ * - Converts in RedditResponse
+ * - Filters by upvotes and media
+ * - Returns Optional<PostToPublishDTO>
+ *
+ */
+
+
 @Service
 public class RedditService {
 
